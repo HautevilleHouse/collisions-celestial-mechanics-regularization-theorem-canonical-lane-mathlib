@@ -1,0 +1,15 @@
+import HautevilleHouse.CollisionsCelestialMechanicsRegularizationTheoremCanonicalLaneLean.GateLemmas
+import HautevilleHouse.CollisionsCelestialMechanicsRegularizationTheoremCanonicalLaneLean.CollisionResolution
+
+namespace HautevilleHouse
+namespace CollisionsCelestialMechanicsRegularizationTheoremCanonicalLaneLean
+
+def ConstrainedCollisionsCelestialMechanicsRegularizationClosure (A : AdmissibleClass) : Prop :=
+  bridgeClosed A ∧ gateClosed A
+
+theorem constrained_collisions_celestial_mechanics_regularization_endgame (A : AdmissibleClass) :
+    ConstrainedCollisionsCelestialMechanicsRegularizationClosure A := by
+  exact And.intro (bridge_from_admissible_class A) (gate_from_admissible_class A)
+
+end CollisionsCelestialMechanicsRegularizationTheoremCanonicalLaneLean
+end HautevilleHouse

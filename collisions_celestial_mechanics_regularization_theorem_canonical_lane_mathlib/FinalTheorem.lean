@@ -1,0 +1,9 @@
+import collisions_celestial_mechanics_regularization_theorem_canonical_lane_mathlib.GateLemmas
+namespace HautevilleHouse
+namespace collisions_celestial_mechanics_regularization_theorem_canonical_lane_mathlib
+structure ConstrainedTheoremClosure where
+  admissible :: intro :: constraint :: consequence :: proof ::
+theorem canonical : ConstrainedTheoremClosure :=
+  ConstrainedTheoremClosure.intro
+end collisions_celestial_mechanics_regularization_theorem_canonical_lane_mathlib
+end HautevilleHouse
